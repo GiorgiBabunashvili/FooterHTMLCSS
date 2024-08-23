@@ -1,0 +1,123 @@
+body {
+  background-color: #faf7ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20px;
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: -90px auto 10px;
+  min-height: 180px;
+  width: 70vw;
+  padding: 20px 30px 40px;
+  border-radius: 16px;
+  background: #6200ee;
+}
+
+footer article h2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(255 255 255 / 90);
+}
+
+footer article button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 20px 0 24px;
+  background: #121121;
+  border: 0;
+  border-radius: 30px;
+  white-space: nowrap;
+  color: #f9f9f9;
+  font-size: 16px;
+}
+
+footer section {
+  position: relative;
+  padding: 0 80px 30px;
+  margin-bottom: 100px;
+}
+
+footer section img {
+  display: block;
+  height: 32px;
+  margin: 0 auto 30px;
+}
+footer section h3 {
+  color: rgb(255 255 255 / 40%);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+footer section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  align-items: center;
+}
+
+footer section ul li a {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(255 255 255 / 90%);
+}
+
+.socials {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  translate: -50% 0;
+  display: flex;
+  gap: 24px;
+  font-size: 20px;
+}
+
+.smal-icon {
+  color: rgb(255 255 255 / 40%);
+}
+
+@media (width > 530px) {
+  footer article {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 30px;
+    margin: -70px 40px 20px;
+    min-height: 140px;
+    width: auto;
+  }
+
+  footer article h2 {
+    font-size: 24px;
+  }
+
+  footer section {
+    margin-bottom: 50px;
+  }
+
+  footer section ul {
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 0;
+    place-items: start;
+    text-align: center;
+  }
+}
